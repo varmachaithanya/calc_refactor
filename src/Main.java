@@ -14,6 +14,10 @@ public class Main{
             var3=var1+var2;
             System.out.println("Sum of two numbers is : "+var3);
         }
+        else if (choice==2){
+            var3=var1-var2;
+            System.out.println("sub of two numbers is : "+var3);
+        }
         else {
             System.out.println("Invalid option");
         }
