@@ -18,6 +18,10 @@ public class Main{
             var3=var1-var2;
             System.out.println("sub of two numbers is : "+var3);
         }
+        else if (choice==3){
+            var3=var1*var2;
+            System.out.println("mul of two numbers is : "+var3);
+        }
         else {
             System.out.println("Invalid option");
         }
