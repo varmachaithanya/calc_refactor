@@ -26,6 +26,10 @@ public class Main{
             var3=var1/var2;
             System.out.println("div of two numbers is : "+var3);
         }
+        else if (choice==5){
+            var3=var1%var2;
+            System.out.println("mod of two numbers is : "+var3);
+        }
         else {
             System.out.println("Invalid option");
         }
