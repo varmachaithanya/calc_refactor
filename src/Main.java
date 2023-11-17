@@ -22,6 +22,10 @@ public class Main{
             var3=var1*var2;
             System.out.println("mul of two numbers is : "+var3);
         }
+        else if (choice==4){
+            var3=var1/var2;
+            System.out.println("div of two numbers is : "+var3);
+        }
         else {
             System.out.println("Invalid option");
         }
