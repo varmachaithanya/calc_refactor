@@ -1,22 +1,9 @@
 import java.util.Scanner;
 
 public class Main{
-    public static  double addition(double a,double b){
-        return a+b;
-    }
-    public static double subtraction(double a,double b){
-        return a-b;
-    }
-    public static double multiplication(double a,double b){
-        return a*b;
-    }
-    public static double division(double a,double b){
-        return a/b;
-    }
-    public static double modulus(double a,double b){
-        return a%b;
-    }
+
     public static void main(String[] args) {
+        Functions f = new Functions();
         Scanner sc = new Scanner(System.in);
         int option=0;
         do {
@@ -28,11 +15,11 @@ public class Main{
             int choice = sc.nextInt();
             double var3;
             switch (choice) {
-                case 1 -> System.out.println("sum of two numbers is :" + addition(var1, var2));
-                case 2 -> System.out.println("sub of two numbers is :" + subtraction(var1, var2));
-                case 3 -> System.out.println("mul of two numbers is :" + multiplication(var1, var2));
-                case 4 -> System.out.println("div of two numbers is :" + division(var1, var2));
-                case 5 -> System.out.println("mod of two numbers is :" + modulus(var1, var2));
+                case 1 -> System.out.println("sum of two numbers is :" + f.addition(var1, var2));
+                case 2 -> System.out.println("sub of two numbers is :" + f.subtraction(var1, var2));
+                case 3 -> System.out.println("mul of two numbers is :" + f.multiplication(var1, var2));
+                case 4 -> System.out.println("div of two numbers is :" + f.division(var1, var2));
+                case 5 -> System.out.println("mod of two numbers is :" + f.modulus(var1, var2));
                 default -> System.out.println("Invalid option");
                 }
             System.out.println("To end the program press 1");
